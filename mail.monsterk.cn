@@ -9,8 +9,8 @@ server {
   root  /home/squirrelmail-webmail;
   index  index.php;
   try_files $uri $uri/ /index.php$is_args$args;
-  ssl_certificate      /etc/letsencrypt/live/ss.monsterk.cn/fullchain.pem;
-  ssl_certificate_key  /etc/letsencrypt/live/ss.monsterk.cn/privkey.pem;
+  ssl_certificate      /etc/letsencrypt/live/mail.monsterk.cn/fullchain.pem;
+  ssl_certificate_key  /etc/letsencrypt/live/mail.monsterk.cn/privkey.pem;
      
   location ~ \.php$ {
     fastcgi_pass   127.0.0.1:9000;
